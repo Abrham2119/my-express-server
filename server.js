@@ -8,8 +8,16 @@ app.get('/', function(req, res) {
 
 })
 
-app.listen(3001, function() {
-    console.log('Server is running on port 3001');
+app.get('/about',function(req, res) {
+    res.send('About Page');
+})
+
+app.get('/contact',function(req, res) {
+    res.send('my name is abrham  zewdu and contact me in abrhamzewdu@gmail.com ');
+})
+
+app.listen(3002, function() {
+    console.log('Server is running on port 3002');
 });
 
 
